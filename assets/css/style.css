@@ -45,11 +45,13 @@ ul{
 img {
     max-width: 300px;
     padding-right: 1em;
+
 }
 
 figure {
     margin: 0;
     line-height: 0;
+    border-radius: 10px;
 }
 
 figcaption {
@@ -89,6 +91,41 @@ figcaption h2{
 .text {
     color: white;
     font-size: 16px;
+}
+
+/* ---- Layout containers ---- */
+
+
+.aida{
+    background: #555555;
+}
+
+.memo{
+    background: #1a1a1a;
+}
+
+.messi{
+    background: #555555;
+}
+
+.portfolio_div p,
+.portfolio_div h4{
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.hover_content p{
+    display: none;
+}
+
+.portfolio_div:hover .hover_content p{
+    display: block;
+}
+
+
+#portfolio{
+    margin-top: 100px;
 }
 
 /* ---- Navigation ---- */
@@ -215,83 +252,79 @@ label.light {
     border-radius: 100%;
 }
 
-@media screen and (min-width: 480px) {
+form {
+    max-width: 480px;
+}
 
-    form {
-        max-width: 480px;
-    }
+/* =================================
+  Base Layout Styles
+==================================== */
 
-    /* =================================
-      Base Layout Styles
-    ==================================== */
+/* ---- Navigation ---- */
 
-    /* ---- Navigation ---- */
+.name {
+    font-size: 21px;
+    margin: 0;
+}
 
-    .name {
-        font-size: 21px;
-        margin: 0;
-    }
+.main-nav {
+    margin-top: 5px;
+}
 
-    .main-nav {
-        margin-top: 5px;
-    }
+.name a,
+.main-nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    color: #929292;
+}
 
-    .name a,
-    .main-nav a {
-        display: block;
-        text-align: center;
-        padding: 10px 15px;
-        color: #929292;
-    }
+.main-nav a {
+    font-size: .95em;
+    text-transform: uppercase;
+}
 
-    .main-nav a {
-        font-size: .95em;
-        text-transform: uppercase;
-    }
+.main-nav a:hover {
+    color: #fff;
+}
+/* ---- Layout Containers ---- */
 
-    .main-nav a:hover {
-        color: #fff;
-    }
-    /* ---- Layout Containers ---- */
-
-    .main-header {
-        padding-top: .5em;
-        padding-bottom: .5em;
-        background: #1a1a1a;
-    }
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background: #1a1a1a;
+}
 
 
-    .col {
-        padding-right: 1em;
-        padding-left: 1em;
-    }
+.col {
+    padding-right: 1em;
+    padding-left: 1em;
+}
 
-    .main-footer {
-        text-align: center;
-    }
+.main-footer {
+    text-align: center;
+}
 
-    .main-footer {
-        background: #1a1a1a;
-        padding: 2em 0;
-        margin-top: 30px;
-    }
+.main-footer {
+    background: #1a1a1a;
+    padding: 2em 0;
+    margin-top: 30px;
+}
 
-    #about{
-        margin-top: 100px;
-    }
+#about{
+    margin-top: 100px;
+}
 
-    #about h3{
-        margin-top: 50px;
-    }
+#about h3{
+    margin-top: 50px;
+}
 
-    #about ul li{
-        list-style-type: disc;
-    }
+#about ul li{
+    list-style-type: disc;
+}
 
-    #about ul li li{
-        list-style-type: circle;
-    }
-
+#about ul li li{
+    list-style-type: circle;
 }
 
 /* =================================
@@ -299,6 +332,13 @@ label.light {
 ==================================== */
 
 @media (max-width: 769px) {
+
+
+    .portfolio_div {
+        width: 100%;
+        height: 300px;
+        display: block;
+    }
 
     img {
         max-width: 90%;
@@ -343,6 +383,13 @@ label.light {
     }
 
     /* ---- Layout Containers ---- */
+
+    .portfolio_div {
+        width: 33.3%;
+        height: 300px;
+        display: table;
+    }
+
     .container {
         width: 90%;
         margin: 0 auto;
