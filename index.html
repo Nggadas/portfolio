@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmanuel Nggadas</title>
     <link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -26,13 +27,7 @@
 
         <div class="primary col">
             <figure>
-
-                <div class="img_container">
-                    <img src="assets/images/web_design.jpg" alt="Vector" class="image" >
-                    <div class="middle">
-                        <div class="text">John Doe</div>
-                    </div>
-                </div>
+                <img src="assets/images/web_design.jpg" alt="Vector" class="image" >
                 <figcaption>
                     <h2>Web Design</h2>
                     Croissant macaroon pie brownie cookie marshmallow liquorice gingerbread caramels toffee.
@@ -67,25 +62,189 @@
         <h1>Portfolio</h1>
         <div class="aida portfolio_div col">
             <div class="hover_content">
-                <h4>topic</h4>
-                <p>blablablaalfhgajskfdgggggggg<br>gggggggggggggggggggg<br>ggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggg</p>
+                <h4>Demonstration project</h4>
+                <span>Technologies used</span>
+                <p>HTML<br>
+                    CSS<br>
+                    JQuery<br>
+                    PHP<br>
+                </p>
+                <button onclick="number1()" id="aida">View</button>
             </div>
         </div>
+
+        <!-- The Modal -->
+        <div id="aida1" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Demonstration Project</h2>
+                <p>HTML | CSS | JQuery | PHP</p>
+                <h3>About</h3>
+                <p>This website was a school assessment project that demonstrated some of the skills I had acquired during
+                    my time at Leeds Beckett University. It covers lots of topics e.g. Interface frameworks, PHP based forms,
+                    angularJS, Object Oriented Programming e.t.c</p>
+                <form action="http://c7157215.herokuapp.com/" target="_blank">
+                    <button>View Website</button>
+                </form>
+            </div>
+
+        </div>
+
+        <script>
+            function number1() {
+
+                // Get the modal
+                var modal1 = document.getElementById('aida1');
+
+                // Get the button that opens the modal
+                var btn1 = document.getElementById("aida");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal
+                btn1.onclick = function first() {
+                    modal1.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function second() {
+                    modal1.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function third(event1) {
+                    if (event1.target == modal1) {
+                        modal1.style.display = "none";
+                    }
+                }
+            }
+        </script>
 
         <div class="memo portfolio_div col">
             <div class="hover_content">
-                <h4>topic</h4>
-                <p>blablabla</p>
+                <h4>MVC Project</h4>
+                <span>Technologies used</span>
+                <p>HTML<br>
+                    CSS<br>
+                    Rails<br>
+                    Foundation<br>
+                </p>
+                <button onclick="number2()" id="memo">View</button>
             </div>
         </div>
+
+        <!-- The Modal -->
+        <div id="memo1" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Demonstration project</h2>
+                <p>HTML | CSS | Rails | Foundation</p>
+                <h3>About</h3>
+                <p>This website was a school assessment project that demonstrated my knowledge of the rails MVC Framework,
+                    It is a site for creating and storing memos/notes. I built it using the rails framework and foundation
+                responsive framework.</p>
+                <form action="http://aida-memos.herokuapp.com/" target="_blank">
+                    <button>View Website</button>
+                </form>
+            </div>
+
+        </div>
+
+        <script>
+            function number2() {
+
+                // Get the modal
+                var modal2 = document.getElementById('memo1');
+
+                // Get the button that opens the modal
+                var btn2 = document.getElementById("memo");
+
+                // Get the <span> element that closes the modal
+                var span2 = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal
+                btn2.onclick = function() {
+                    modal2.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span2.onclick = function() {
+                    modal2.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event2) {
+                    if (event2.target == modal2) {
+                        modal2.style.display = "none";
+                    }
+                }
+            }
+        </script>
 
         <div class="messi portfolio_div col">
             <div class="hover_content">
-                <h4>topic</h4>
-                <p>blablabla</p>
+                <h4>First Website</h4>
+                <span>Technologies used</span>
+                <p>HTML<br>
+                    CSS<br>
+                </p>
+                <button onclick="number3()" id="messi">View</button>
             </div>
         </div>
 
+        <!-- The Modal -->
+        <div id="messi1" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Demonstration project</h2>
+                <p>HTML | CSS</p>
+                <h3>About</h3>
+                <p>This website was a school assessment project and is the first website I ever built.
+                    It is a static website built on HtML and CSS.</p>
+                <form action="#" target="_blank">
+                    <button>View Website</button>
+                </form>
+            </div>
+
+        </div>
+
+        <script>
+            function number3() {
+
+                // Get the modal
+                var modal3 = document.getElementById('messi1');
+
+                // Get the button that opens the modal
+                var btn3 = document.getElementById("messi");
+
+                // Get the <span> element that closes the modal
+                var span3 = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal
+                btn3.onclick = function third() {
+                    modal3.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span3.onclick = function third() {
+                    modal3.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function third(event3) {
+                    if (event3.target == modal3) {
+                        modal3.style.display = "none";
+                    }
+                }
+            }
+        </script>
     </div>
 
     <!--About me-->
@@ -121,7 +280,7 @@
                 <li>Desktop-app Development
                     <ul>
                         <li>Java</li>
-                        <li>C#</li>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼
+                        <li>C&#35;</li>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼
                     </ul>
                 </li>
             </ul>￼￼￼￼￼￼
